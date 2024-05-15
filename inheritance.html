@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>JAVA TUTORIAL WEBSITE_ICT 3&4 PBE</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+            <span>
+              TECHWIZZ CORPORATION
+            </span>
+          </a>
+          <div class="contact_nav" id="">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/location.png" alt="" />
+                  <span>Marikina City</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/call.png" alt="" />
+                  <span>Call : + 633 9926014197</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/envelope.png" alt="" />
+                  <span>techwizz@business.com.ph</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container">
+        <div class="custom_nav2">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex  flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Method</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="service.html">Class Constructor</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Overloaded Method</a>
+                  </li>
+				  <li class="nav-item">
+                    <a class="nav-link" href="encapsulation.html">Encapsulation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="inheritance.html">Inheritance</a>
+                  </li>
+				  <li class="nav-item">
+                    <a class="nav-link" href="polymorphism.html">Polymorphism</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          <span>
+            How to Create Inheritance
+          </span>
+        </h2>
+      </div>
+      <div class="service_container">
+        <div class="detail-box">
+          <p>
+            Step 1: Identify the Base Class: Determine the class that will serve as the superclass, containing common properties and behaviors that you want to reuse in the subclass.
+Define the Superclass: Create the superclass with the desired fields, methods, and constructors.
+<br>
+<br>
+public class Animal {<br>
+    private String name;<br>
+    <br>
+    public Animal(String name) {<br>
+        this.name = name;<br>
+    }<br>
+    <br>
+    public void speak() {<br>
+        System.out.println("I am an animal.");<br>
+    }<br>
+    <br>
+    public String getName() {<br>
+        return name;<br>
+    }<br>
+}<br>
+<br>
+<br>
+Step 2: Create the Subclass: Declare the subclass by using the extends keyword followed by the name of the superclass.
+<br>
+<br>
+public class Dog extends Animal {<br>
+    public Dog(String name) {<br>
+        super(name); // Call superclass constructor<br>
+    }<br>
+    <br>
+    @Override<br>
+    public void speak() {<br>
+        System.out.println("Woof!");<br>
+    }<br>
+}<br>
+<br>
+<br>
+Step 3: <br>
+public class Dog extends Animal {<br>
+    public Dog(String name) {<br>
+        super(name); // Call superclass constructor<br>
+    }<br>
+<br>
+    @Override<br>
+    public void speak() {<br>
+        System.out.println("Woof!");<br>
+    }<br>
+}<br>
+<br>
+<br>
+Override Methods (Optional): If you want to change the behavior of a method in the subclass, you can override it by using the @Override annotation. Access Superclass Members: Subclasses can access public or protected members of the superclass directly using the dot operator (.). Private members are not accessible.
+<br>
+<br>
+STEP 4: <br>
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Dog dog = new Dog("Buddy");<br>
+        System.out.println("Name: " + dog.getName()); // Output: Name: Buddy<br>
+        dog.speak(); // Output: Woof!<br>
+    }<br>
+}<br>
+<br>
+<br>
+Lastly, Run the Program: Compile and run the Java program to see the inheritance in action. You should observe that the subclass (Dog) inherits the properties and behaviors of the superclass (Animal) and can also have its own unique characteristics.
+<br>
+          </p>
+				</a>
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2-top">
+    <div class="container">
+      <div class="info_form">
+        <h4>
+            About Techwizz Corporation
+          </h6>
+          <p>
+            Techwizz Corporation's commitment to innovation, quality, and customer satisfaction sets it apart in the competitive tech landscape. 
+			With a focus on staying ahead of the curve and anticipating market trends, 
+			Techwizz continues to drive technological advancements that empower businesses and enrich lives.
+          </p>
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <p>
+      &copy; 2024 All Rights Reserved. Design by
+      <a href="https://html.design/">Techwizz Corporation</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>

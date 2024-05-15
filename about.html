@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>JAVA TUTORIAL WEBSITE_ICT 3&4 PBE</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page about_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+            <span>
+              TECHWIZZ CORPORATION
+            </span>
+          </a>
+          <div class="contact_nav" id="">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/location.png" alt="" />
+                  <span>Marikina City</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/call.png" alt="" />
+                  <span>Call : + 63 9926014197</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/envelope.png" alt="" />
+                  <span>techwizz@business.com.ph</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container">
+        <div class="custom_nav2">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex  flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="about.html">Method</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="service.html">Class Constructor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Overloaded Method</a>
+                  </li>
+				  <li class="nav-item">
+                    <a class="nav-link" href="encapsulation.html">Encapsulation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="inheritance.html">Inheritance</a>
+                  </li>
+				  <li class="nav-item">
+                    <a class="nav-link" href="polymorphism.html">Polymorphism</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          How to Create Method
+        </h2>
+      </div>
+      <div class="box">
+        <div class="img-box">
+          <img src="images/about-img.png" alt="">
+        </div>
+        <div class="detail-box">
+          <p>
+            Method: A method is a block of code which only runs when it is called.
+			You can pass data, known as parameters, into a method.
+			Methods are used to perform certain actions, and they are also known as functions.
+			Why use methods? To reuse code: define the code once, and use it many times.
+			<br>
+			<br>
+			STEP 1: Create a Method
+			A method must be declared within a class. It is defined with the name of the method, followed by parentheses (). Java provides some pre-defined methods, such as System.out.println(), but you can also create your own methods to perform certain actions:
+			<br>
+			<br>
+			public class Main {
+			static void myMethod() {
+				// code to be executed
+			}
+			}
+			<br>
+			<br>
+			Example Explained
+			myMethod() - is the name of the method
+			static -  means that the method belongs to the Main class and not an object of the Main class. You will learn more about objects and how to access methods through objects later in this tutorial.
+			void - means that this method does not have a return value. You will learn more about return values later in this chapter
+			<br>
+			<br>
+			STEP 2: Call a Method
+			To call a method in Java, write the method's name followed by two parentheses () and a semicolon;
+			In the following example, myMethod() is used to print a text (the action), when it is called:
+			<br>
+			<br>
+			public class Main {
+			static void myMethod() {
+			<br>
+			System.out.println("I just got executed!");
+			<br>
+			}
+			public static void main(String[] args) {
+			myMethod();
+			}
+			}
+			<br>
+			// Outputs "I just got executed!"
+			<br>
+			<br>
+			STEP 3: A method can also be called multiple times:
+			<br>
+			<br>
+			public class Main {
+			static void myMethod() {
+			System.out.println("I just got executed!");
+			}
+			<br>
+			public static void main(String[] args) {
+			myMethod();
+			myMethod();
+			myMethod();
+			}
+			}
+			<br>
+			// I just got executed!
+			// I just got executed!
+			// I just got executed!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2-top">
+    <div class="container">
+      <div class="info_form">
+        <h4>
+            About Techwizz Corporation
+          </h6>
+          <p>
+            Techwizz Corporation's commitment to innovation, quality, and customer satisfaction sets it apart in the competitive tech landscape. 
+			With a focus on staying ahead of the curve and anticipating market trends, 
+			Techwizz continues to drive technological advancements that empower businesses and enrich lives.
+          </p>
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <p>
+      &copy; 2024 All Rights Reserved. Design by
+      <a href="https://html.design/">Techwizz Corporation</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>

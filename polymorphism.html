@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>JAVA TUTORIAL WEBSITE_ICT 3&4 PBE</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+            <span>
+              TECHWIZZ CORPORATION
+            </span>
+          </a>
+          <div class="contact_nav" id="">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/location.png" alt="" />
+                  <span>Marikina City</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/call.png" alt="" />
+                  <span>Call : + 63 9926014197</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/envelope.png" alt="" />
+                  <span>techwizz@business.com.ph</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container">
+        <div class="custom_nav2">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex  flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Method</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="service.html">Class Constructor</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Overloaded Method</a>
+                  </li>
+				  <li class="nav-item">
+                    <a class="nav-link" href="encapsulation.html">Encapsulation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="inheritance.html">Inheritance</a>
+                  </li>
+				  <li class="nav-item">
+                    <a class="nav-link" href="polymorphism.html">Polymorphism</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          <span>
+            How to Create Polymorphism
+          </span>
+        </h2>
+      </div>
+      <div class="service_container">
+        <div class="detail-box">
+          <p>
+            Polymorphism allows objects of different classes to be treated as objects of a common superclass. Here's a step-by-step guide:
+STEP 1: Identify Classes: Determine the classes involved in the polymorphic behavior. Typically, there will be a superclass and one or more subclasses. 
+Define Superclass: Create a superclass with methods that will be overridden by its subclasses.
+<br>
+<br>
+public class Animal {<br>
+    public void makeSound() {<br>
+        System.out.println("Some generic sound");<br>
+    }<br>
+}<br>
+<br>
+<br>
+STEP 2: Define Subclasses: Create subclasses that extend the superclass and override its methods.
+<br>
+<br>
+public class Dog extends Animal {<br>
+    @Override<br>
+    public void makeSound() {<br>
+        System.out.println("Woof!");<br>
+    }<br>
+}<br>
+<br>
+public class Cat extends Animal {<br>
+    @Override<br>
+    public void makeSound() {<br>
+        System.out.println("Meow!");<br>
+    }<br>
+}<br>
+<br>
+<br>
+STEP 3: Invoke Methods: Create objects of the subclasses and invoke overridden methods. Since these objects are treated as objects of the superclass, the appropriate overridden method will be called based on the actual type of the object.
+Invoke Methods: Create objects of the subclasses and invoke overridden methods. Since these objects are treated as objects of the superclass, the appropriate overridden method will be called based on the actual type of the object.
+Lastly, Run the Program: Compile and run the Java program to see polymorphic behavior in action. Despite being treated as objects of the superclass Animal, the overridden methods of the subclasses Dog and Cat are called based on their actual types.
+          </p>
+				</a>
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+ <!-- info section -->
+
+  <section class="info_section layout_padding2-top">
+    <div class="container">
+      <div class="info_form">
+        <h4>
+            About Techwizz Corporation
+          </h6>
+          <p>
+            Techwizz Corporation's commitment to innovation, quality, and customer satisfaction sets it apart in the competitive tech landscape. 
+			With a focus on staying ahead of the curve and anticipating market trends, 
+			Techwizz continues to drive technological advancements that empower businesses and enrich lives.
+          </p>
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <p>
+      &copy; 2024 All Rights Reserved. Design by
+      <a href="https://html.design/">Techwizz Corporation</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>

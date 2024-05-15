@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>JAVA TUTORIAL WEBSITE_ICT 3&4 PBE</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+            <span>
+              TECHWIZZ CORPORATION
+            </span>
+          </a>
+          <div class="contact_nav" id="">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/location.png" alt="" />
+                  <span>Marikina City</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/call.png" alt="" />
+                  <span>Call : + 63 9926014197</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">
+                  <img src="images/envelope.png" alt="" />
+                  <span>techwizz@business.com.ph</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container">
+        <div class="custom_nav2">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex  flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Method</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="service.html">Class Constructor</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Overloaded Method</a>
+                  </li>
+				  <li class="nav-item">
+                    <a class="nav-link" href="encapsulation.html">Encapsulation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="inheritance.html">Inheritance</a>
+                  </li>
+				  <li class="nav-item">
+                    <a class="nav-link" href="polymorphism.html">Polymorphism</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          <span>
+            How to Create Overloaded Method
+          </span>
+        </h2>
+      </div>
+      <div class="service_container">
+        <div class="detail-box">
+          <p>
+            Overloaded methods are methods in a class that have the same name but different parameter lists. Here's a step-by-step guide:
+<br>
+<br>
+Step 1: Identify the Method Signature: The method signature consists of the method name and the parameter list. To overload a method, we'll create another method with the same name but a different parameter list. 
+<br>
+<br>
+Step 2: Define the Class: Create a Java class where you want to implement the overloaded method. Let's call it OverloadedMethodExample.
+<br>
+<br>
+public class OverloadedMethodExample {
+    // Existing method
+    public void printMessage() {
+        System.out.println("Hello, World!");
+    }
+<br>
+    // Overloaded method
+    public void printMessage(String message) {
+        System.out.println(message);
+    }
+}
+<br>
+Step 3: Create the Overloaded Method: Define a method with the same name as an existing method but with different parameters.
+<br>
+public void printMessage(String message) {
+    System.out.println(message);
+}
+<br>
+<br>
+Step 4: Implement the Method: Write the code for the overloaded method. This method will perform a similar task to the original method but may have different behavior based on the parameters.
+Testing: To ensure our overloaded method works, create an object of the class and call both methods.
+<br>
+<br>
+public class Main {
+    public static void main(String[] args) {
+        OverloadedMethodExample example = new OverloadedMethodExample();
+<br>
+        // Call the original method
+        example.printMessage(); // Output: Hello, World!
+<br>
+        // Call the overloaded method
+        example.printMessage("This is an overloaded method."); // Output: This is an overloaded method.
+    }
+}
+<br>
+<br>
+Lastly is Run the Program: Compile and run the Java program. You should see the output from both the original method and the overloaded method.
+          </p>
+				</a>
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+  
+  <!-- info section -->
+
+  <section class="info_section layout_padding2-top">
+    <div class="container">
+      <div class="info_form">
+        <h4>
+            About Techwizz Corporation
+          </h6>
+          <p>
+            Techwizz Corporation's commitment to innovation, quality, and customer satisfaction sets it apart in the competitive tech landscape. 
+			With a focus on staying ahead of the curve and anticipating market trends, 
+			Techwizz continues to drive technological advancements that empower businesses and enrich lives.
+          </p>
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <p>
+      &copy; 2024 All Rights Reserved. Design by
+      <a href="https://html.design/">Techwizz Corporation</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>
